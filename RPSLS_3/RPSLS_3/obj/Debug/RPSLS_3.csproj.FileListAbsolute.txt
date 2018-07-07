@@ -1,0 +1,7 @@
+C:\Users\rbaru\OneDrive\Desktop\Visual_Studio_Projects\RSPLS_3\RPSLS_3\RPSLS_3\bin\Debug\RPSLS_3.exe.config
+C:\Users\rbaru\OneDrive\Desktop\Visual_Studio_Projects\RSPLS_3\RPSLS_3\RPSLS_3\bin\Debug\RPSLS_3.exe
+C:\Users\rbaru\OneDrive\Desktop\Visual_Studio_Projects\RSPLS_3\RPSLS_3\RPSLS_3\bin\Debug\RPSLS_3.pdb
+C:\Users\rbaru\OneDrive\Desktop\Visual_Studio_Projects\RSPLS_3\RPSLS_3\RPSLS_3\obj\Debug\RPSLS_3.csprojAssemblyReference.cache
+C:\Users\rbaru\OneDrive\Desktop\Visual_Studio_Projects\RSPLS_3\RPSLS_3\RPSLS_3\obj\Debug\RPSLS_3.csproj.CoreCompileInputs.cache
+C:\Users\rbaru\OneDrive\Desktop\Visual_Studio_Projects\RSPLS_3\RPSLS_3\RPSLS_3\obj\Debug\RPSLS_3.exe
+C:\Users\rbaru\OneDrive\Desktop\Visual_Studio_Projects\RSPLS_3\RPSLS_3\RPSLS_3\obj\Debug\RPSLS_3.pdb
