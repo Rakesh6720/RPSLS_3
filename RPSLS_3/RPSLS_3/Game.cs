@@ -83,7 +83,6 @@ namespace RPSLS_3
         }
 
 
-
         public void PlayRound()
         {
             HumanPlayerPlays(player1);
@@ -131,6 +130,7 @@ namespace RPSLS_3
                 Console.WriteLine("Game Over!");
                 if (player1.Score > player2.Score)
                 {
+                    
                     Console.WriteLine(player1.Name + " wins the match!");
                     string playAgain = GetUserInput("Would you like to play again? /n 1) YES /n 2) NO");
                     int playAgainInt = Int32.Parse(playAgain);
@@ -143,6 +143,7 @@ namespace RPSLS_3
                 }
                 else
                 {
+                    
                     Console.WriteLine(player2.Name + " wins the match!");
                     string playAgain = GetUserInput("Would you like to play again? /n 1) YES /n 2) NO");
                     int playAgainInt = Int32.Parse(playAgain);
@@ -158,6 +159,7 @@ namespace RPSLS_3
             {
                 if (player1.Score > player2.Score)
                 {
+                    PrintVictoryMessage(player1, player2);
                     Console.WriteLine(player1.Name + " wins the round!");
                 }
                 else if (player1.Score == player2.Score)
@@ -166,11 +168,71 @@ namespace RPSLS_3
                 }
                 else
                 {
+                    PrintVictoryMessage(player2, player1);
                     Console.WriteLine(player2.Name + " wins the round!");
                 }
                 Console.WriteLine("Next Round!");
                 PlayRound();
             }
+        }
+
+        public void PrintVictoryMessage(Player winner, Player loser)
+        {
+            if (winner.Weapon == 0)
+            {
+                if (loser.Weapon == 2)
+                {
+                    Console.WriteLine("Rock crushes Scissors.  " + winner.Name + " wins the round!");
+                }
+                if (loser.Weapon == 4)
+                {
+                    Console.WriteLine("Rock crushes Lizard.  " + winner.Name + " wins teh round!");
+                }
+            }
+            else if (winner.Weapon == 1)
+            {
+                if (loser.Weapon == 0)
+                {
+                    Console.WriteLine("Paper covers rock.  " + winner.Name + " wins the round!");
+                }
+                if (loser.Weapon == 3)
+                {
+                    Console.WriteLine("Paper disproves Spock.  " + winner.Name + " wins the round!");
+                }
+            }
+            else if (winner.Weapon == 2)
+            {
+                if (loser.Weapon == 1)
+                {
+                    Console.WriteLine("Scissors cuts Paper.  " + winner.Name + " wins the round!");
+                }
+                if (loser.Weapon == 4)
+                {
+                    Console.WriteLine("Scissors decapitates Lizard.  " + winner.Name + " wins the round!");
+                }
+            }
+            else if (winner.Weapon == 3)
+            {
+                if (loser.Weapon == 2)
+                {
+                    Console.WriteLine("Spock smashes Scissors.  " + winner.Name + " wins the round!");
+                }
+                if (loser.Weapon == 0)
+                {
+                    Console.WriteLine("Spock vaporizes Rock.  " + winner.Name + " wins the round!");
+                }
+            }
+            else if (winner.Weapon == 4)
+            {
+                if (loser.Weapon == 3)
+                {
+                    Console.WriteLine("Lizard poisons Spock.  " + winner.Name + " wins the round!");
+                }
+                if (loser.Weapon == 1)
+                {
+                    Console.WriteLine("Lizard eats Paper.  " + winner.Name + " wins the round!");
+                }
+            }                          
         }
     }
 }
